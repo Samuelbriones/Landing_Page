@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #fdfcfb;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #6c5ce7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #ffeaa7;
+  }
+  
+  /* Presentación */
+  #presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: #dfe6e9;
+  }
+  
+  #presentacion h2 {
+    font-size: 2rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+  }
+  
+  #presentacion button {
+    background: #6c5ce7;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+  }
+  
+  #presentacion button:hover {
+    background: #4834d4;
+    transform: scale(1.05);
+  }
+  
+  /* Catálogo */
+  #catalogo {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  #catalogo h2 {
+    margin-bottom: 2rem;
+    color: #6c5ce7;
+    font-size: 2rem;
+  }
+  
+  .grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2d3436;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #636e72;
+  }
+  
+  .card button {
+    background: #00b894;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .card button:hover {
+    background: #019875;
+  }
+  
+  /* Misión y visión */
+  #mision-vision {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    background: #f1f2f6;
+  }
+  
+  #mision-vision h2 {
+    margin-bottom: 1.5rem;
+    color: #6c5ce7;
+    font-size: 2rem;
+  }
+  
+  #mision-vision article {
+    margin: 1rem auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* Footer */
+  footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: #ffeaa7;
+    margin: 0 0.5rem;
+  }
+  
