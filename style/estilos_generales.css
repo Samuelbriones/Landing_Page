@@ -39,6 +39,7 @@
     color: #555;
     margin-bottom: 1rem;
     line-height: 1.7;
+    text-align: justify;
   }
   
   .hero-texto button {
