@@ -384,7 +384,7 @@ header {
 }
 
 .hero-imagen img {
-  max-width: 120%;
+  max-width: 110%;
   height: auto;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-xl);
