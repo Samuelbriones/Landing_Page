@@ -231,16 +231,6 @@ header {
   z-index: 1;
 }
 
-.hero-texto h1 {
-  font-family: var(--font-family-primary);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: var(--space-md);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-}
-
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
@@ -1069,14 +1059,41 @@ footer {
   }
 
   /* Hero móvil */
+ /* ===== HERO / PRESENTACIÓN ===== */
+#presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 8rem 5% 4rem; /* padding original */
+  padding-top: calc(8rem + 70px); /* Ajuste para header fijo */
+  background: var(--body-bg);
+  gap: 3rem;
+  scroll-padding-top: 80px; /* Evita que los ancla queden tapados */
+}
+
+/* Hero texto */
+.hero-texto h1 {
+  font-family: var(--font-family-primary);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Ajuste responsive móvil */
+@media (max-width: 768px) {
   #presentacion {
     flex-direction: column;
     text-align: center;
     padding: 6rem 3% 3rem;
+    padding-top: calc(6rem + 80px); /* Ajuste extra para header más alto en móvil */
     gap: 2rem;
-    padding-top: calc(8rem + 60px);
-    scroll-padding-top: 80px;
   }
+}
+
 
   /* Secciones móvil */
   #catalogo, #mision-vision, #contacto {
@@ -1086,15 +1103,6 @@ footer {
   .grid-catalogo {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .mision-vision-contenedor {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .mision-vision-contenedor article {
-    padding: 1.5rem;
   }
 
   footer {
