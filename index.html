@@ -3,144 +3,452 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Librería Sam</title>
-  <link rel="stylesheet" href="/style/estilos_generales.css">
-  <link rel="stylesheet" href="/style/formulario.css">
+  <title>Sam's BookHub - Librería Online | Compra Libros con Envío Gratis</title>
+  <meta name="description" content="Descubre miles de libros en Sam's BookHub. Compra online con envío gratis, precios especiales y la mejor selección de literatura, ensayo, ficción y más.">
+  <meta name="keywords" content="librería online, comprar libros, envío gratis, literatura, novelas, ensayos, libros digitales">
+  <meta name="author" content="Sam's BookHub">
+  <meta property="og:title" content="Sam's BookHub - La mejor librería online">
+  <meta property="og:description" content="Descubre miles de libros con envío gratis y los mejores precios">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.samsbookhub.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/estilos_generales.css">
+  <link rel="stylesheet" href="style/formulario.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
 <body>
   <!-- Encabezado -->
   <header>
-    <div class="logo">Librería Sam</div>
-    <nav>
-      <ul>
-        <li><a href="#presentacion">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#mision-vision">Misión & Visión</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="/style/img/logo.png" alt="Sam's BookHub - Librería Online" class="logo-img">
+        <span class="logo-text">Sam's BookHub</span>
+      </div>
+      <nav class="nav-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="#presentacion">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Presentación principal -->
-  <section id="presentacion">
-    <article class="hero-texto">
-      <h2>Descubre tu próxima aventura literaria</h2>
-      <p>
-        Bienvenido a <strong>Librería Sam</strong>, un espacio creado para los amantes de los libros. 
-        Esta landing page tiene como objetivo acercarte a nuestra pasión por la lectura, 
-        mostrándote un catálogo cuidadosamente seleccionado de títulos que inspiran, educan y acompañan cada etapa de la vida.
-      </p>
-      <p>
-        Aquí encontrarás desde los clásicos de siempre hasta las últimas novedades editoriales. 
-        Queremos que cada visita sea una experiencia que despierte tu curiosidad y te invite a sumergirte en nuevas historias, 
-        porque cada libro abre la puerta a un mundo lleno de posibilidades.
-      </p>
-      <button>Explorar Catálogo</button>
-    </article>
-  
-    <aside class="hero-imagen">
-      <img src="https://cdn.pixabay.com/photo/2025/07/15/00/44/cat-9714892_1280.png" 
-           alt="Persona leyendo libros inspiradores">
-    </aside>
-  </section>
-  
-
-  <!-- Catálogo -->
-  <section id="catalogo">
-    <h2>Nuestros Libros</h2>
-    <div class="grid-catalogo">
+  <main>
+    <section id="presentacion" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-texto">
+          <h1>La mejor librería online de Latinoamérica</h1>
+          <p class="hero-subtitle">
+            Más de <strong>50,000 títulos</strong> disponibles con <strong>envío gratis</strong> y los mejores precios del mercado
+          </p>
+          <div class="hero-features">
+            <div class="feature">
+              <span class="feature-icon"><i class="fas fa-book"></i></span>
+              <span>Catálogo completo</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon2"><i class="fas fa-truck"></i></span>
+              <span>Envío gratis</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon3"><i class="fas fa-credit-card"></i></span>
+              <span>Pago seguro</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon4"><i class="fas fa-star"></i></span>
+              <span>Garantía total</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn-primary">Ver catálogo completo</a>
+            <a href="#ofertas" class="btn-secondary">Ofertas especiales</a>
+          </div>
+          <div class="trust-indicators">
+            <span class="trust-item">✓ Más de 10,000 clientes satisfechos</span>
+            <span class="trust-item">✓ Garantía de satisfacción 100%</span>
+          </div>
+        </div>
       
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2025/05/26/13/43/ai-generated-9623473_960_720.png" alt="Libro 1">
-        <h3>El Principito</h3>
-        <p>Antoine de Saint-Exupéry</p>
-        <button>Comprar</button>
+        <div class="hero-imagen">
+          <img src="https://cdn.pixabay.com/photo/2015/06/02/12/59/book-794978_1280.jpg" 
+               alt="Colección de libros - Sam's BookHub librería online">
+          <div class="hero-badge">
+            <span class="badge-text">+50k títulos</span>
+          </div>
+        </div>
       </div>
-  
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2022/12/20/12/28/picasso-7667784_1280.jpg" alt="Libro 2">
-        <h3>Poemas de Pablo Neruda</h3>
-        <p>Pablo Neruda</p>
-        <button>Comprar</button>
-      </div>
-  
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2019/03/01/18/32/night-4028339_1280.jpg" alt="Libro 3">
-        <h3>Coraline</h3>
-        <p>Neil Gaiman</p>
-        <button>Comprar</button>
-      </div>
-  
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2016/11/03/15/39/vintage-1794696_960_720.jpg" alt="Libro 4">
-        <h3>Alicia en el País de las Maravillas</h3>
-        <p>Lewis Carroll</p>
-        <button>Comprar</button>
-      </div>
-  
-    </div>
-  </section>
+    </section>
   
 
-  <!-- Misión y visión -->
-<section id="mision-vision">
-    <h2>Nuestra Esencia</h2>
-    <div class="mision-vision-contenedor">
-      <article>
-        <h3>Misión</h3>
-        <p>
-          En <b>Librería Sam</b> nuestra misión es fomentar la pasión por la lectura 
-          ofreciendo un espacio donde cada persona pueda encontrar libros que 
-          inspiran, educan y entretienen. 
-        </p>
-        <p>
-          Nos comprometemos a brindar una amplia selección de títulos para todas 
-          las edades, garantizando calidad y accesibilidad para que la lectura 
-          sea parte de la vida cotidiana de nuestros clientes.
-        </p>
-      </article>
+    <!-- Catálogo -->
+    <section id="catalogo">
+      <div class="container">
+        <div class="section-header">
+          <h2>Libros más vendidos</h2>
+          <p class="section-subtitle">Descubre los títulos favoritos de nuestros lectores con precios especiales</p>
+        </div>
+        
+        <div class="grid-catalogo">
+          <article class="product-card">
+            <div class="card-badge">Bestseller</div>
+            <img src="https://cdn.pixabay.com/photo/2025/05/26/13/43/ai-generated-9623473_960_720.png" alt="Portada del libro El Principito">
+            <div class="card-content">
+              <h3>El Principito</h3>
+              <p class="author">Antoine de Saint-Exupéry</p>
+              <div class="rating">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="review-count">(1,245 reseñas)</span>
+              </div>
+              <div class="price-container">
+                <span class="price-old">$24.99</span>
+                <span class="price-current">$18.99</span>
+                <span class="discount">24% OFF</span>
+              </div>
+              <button class="btn-buy" data-product="el-principito">Agregar al carrito</button>
+            </div>
+          </article>
+      
+          <article class="product-card">
+            <div class="card-badge new">Nuevo</div>
+            <img src="https://cdn.pixabay.com/photo/2022/12/20/12/28/picasso-7667784_1280.jpg" alt="Portada del libro Poemas de Pablo Neruda">
+            <div class="card-content">
+              <h3>Poemas de Pablo Neruda</h3>
+              <p class="author">Pablo Neruda</p>
+              <div class="rating">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="review-count">(892 reseñas)</span>
+              </div>
+              <div class="price-container">
+                <span class="price-current">$22.50</span>
+              </div>
+              <button class="btn-buy" data-product="poemas-neruda">Agregar al carrito</button>
+            </div>
+          </article>
+      
+          <article class="product-card">
+            <img src="https://cdn.pixabay.com/photo/2019/03/01/18/32/night-4028339_1280.jpg" alt="Portada del libro Coraline">
+            <div class="card-content">
+              <h3>Coraline</h3>
+              <p class="author">Neil Gaiman</p>
+              <div class="rating">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="review-count">(2,156 reseñas)</span>
+              </div>
+              <div class="price-container">
+                <span class="price-old">$19.99</span>
+                <span class="price-current">$15.99</span>
+                <span class="discount">20% OFF</span>
+              </div>
+              <button class="btn-buy" data-product="coraline">Agregar al carrito</button>
+            </div>
+          </article>
+      
+          <article class="product-card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/03/15/39/vintage-1794696_960_720.jpg" alt="Portada del libro Alicia en el País de las Maravillas">
+            <div class="card-content">
+              <h3>Alicia en el País de las Maravillas</h3>
+              <p class="author">Lewis Carroll</p>
+              <div class="rating">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="review-count">(1,834 reseñas)</span>
+              </div>
+              <div class="price-container">
+                <span class="price-current">$16.75</span>
+              </div>
+              <button class="btn-buy" data-product="alicia-pais-maravillas">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+    </section>
+    <!-- Testimonios y confianza -->
+    <section id="testimonios">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p class="section-subtitle">Miles de lectores confían en nosotros</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <div class="testimonial-content">
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+              <p>"Excelente servicio, los libros llegan en perfectas condiciones y súper rápido. Es mi librería online favorita."</p>
+              <div class="testimonial-author">
+                <strong>María González</strong>
+                <span>Cliente verificada</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-content">
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+              <p>"Los mejores precios que he encontrado. El catálogo es increíble y la atención al cliente es de primera."</p>
+              <div class="testimonial-author">
+                <strong>Carlos Rodríguez</strong>
+                <span>Cliente verificado</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-content">
+              <span class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+              <p>"Mi hijo ama los libros que compramos aquí. La selección infantil es fantástica y los precios accesibles."</p>
+              <div class="testimonial-author">
+                <strong>Ana Martínez</strong>
+                <span>Cliente verificada</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información de la empresa -->
+    <section id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Por qué elegir Sam's BookHub?</h2>
+          <p class="section-subtitle">Tu librería de confianza desde 2018</p>
+        </div>
+    
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-truck"></i></div>
+            <h3>Envío gratuito</h3>
+            <p>Envío gratis en compras superiores a $35. Recibe tus libros en 24-48 horas.</p>
+          </div>
+    
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-lock"></i></div>
+            <h3>Pago 100% seguro</h3>
+            <p>Transacciones encriptadas con certificado SSL. Acepta todas las tarjetas y PayPal.</p>
+          </div>
+    
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-phone"></i></div>
+            <h3>Soporte 24/7</h3>
+            <p>Atención al cliente todos los días. Resolución garantizada en menos de 2 horas.</p>
+          </div>
+    
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-undo-alt"></i></div>
+            <h3>Devolución fácil</h3>
+            <p>30 días para devoluciones sin preguntas. Proceso simple y reembolso inmediato.</p>
+          </div>
+    
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-book"></i></div>
+            <h3>Catálogo completo</h3>
+            <p>Más de 50,000 títulos disponibles. Desde bestsellers hasta ediciones limitadas.</p>
+          </div>
+    
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-coins"></i></div>
+            <h3>Mejores precios</h3>
+            <p>Garantizamos los precios más competitivos del mercado con ofertas exclusivas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   
-      <article>
-        <h3>Visión</h3>
-        <p>
-          Nuestra visión es convertirnos en la librería de referencia en 
-          Latinoamérica, reconocida no solo por la variedad de libros, sino 
-          también por el impacto cultural que generamos en la comunidad.
-        </p>
-        <p>
-          Buscamos ser un puente entre los autores y los lectores, 
-          apoyando el talento emergente y promoviendo la lectura como 
-          una herramienta de crecimiento personal y colectivo.
-        </p>
-      </article>
-    </div>
-  </section>
-  
-  <!-- Formulario de contacto -->
-  <section id="mision-vision">
-    <h2>Contáctanos</h2>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>¿Tienes alguna pregunta?</h2>
+            <p class="contact-subtitle">Estamos aquí para ayudarte. Contáctanos por cualquier consulta sobre nuestros libros, envíos o servicios.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                <div>
+                  <strong>Email</strong>
+                  <p>samuelbriones558@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <p>(+593) 960 974 818</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                <div>
+                  <strong>Horarios</strong>
+                  <p>Lun-Sáb: 9:00-18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+              </div>
 
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required>
+              <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required placeholder="tu@email.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto" required>
+                  <option value="">Selecciona un asunto</option>
+                  <option value="consulta-libro">Consulta sobre un libro</option>
+                  <option value="estado-pedido">Estado de mi pedido</option>
+                  <option value="devolucion">Devolución o cambio</option>
+                  <option value="sugerencia">Sugerencia de libro</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+              </div>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+              <button type="submit" class="btn-form">Enviar mensaje</button>
+              
+              <p class="form-note">*Responderemos en menos de 2 horas durante nuestro horario de atención</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Pie de página -->
   <footer>
-    <p>&copy; 2025 Librería Sam | Síguenos en redes sociales</p>
-    <p>
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="/style/img/logo.png" alt="Sam's BookHub">
+            <span>Sam's BookHub</span>
+          </div>
+          <p class="footer-description">Tu librería online de confianza con más de 50,000 títulos y envío gratuito en toda Latinoamérica.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Atención al cliente</h3>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Seguimiento de pedidos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Métodos de pago</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Información</h3>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> samuelbriones558@gmail.com</li>
+            <li><i class="fas fa-phone"></i> (+593) 960 974 818</li>
+            <li><i class="fas fa-clock"></i> Lun-Sáb: 9:00-18:00</li>
+          </ul>
+          <div class="payment-methods">
+            <span>Métodos de pago:</span>
+            <div class="payment-icons">
+              <span><i class="fas fa-credit-card"></i></span>  
+              <span><i class="fas fa-parking"></i></span>      
+              <span><i class="fas fa-university"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sam's BookHub. Todos los derechos reservados.</p>
+        <p class="security-badges">
+          <span class="badge"><i class="fas fa-lock"></i> Sitio seguro SSL</span>
+          <span class="badge"><i class="fas fa-check-circle"></i> Empresa verificada</span>
+          <span class="badge"><i class="fas fa-shield-alt"></i> Compra protegida</span>
+        </p>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
