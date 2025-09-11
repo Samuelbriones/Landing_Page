@@ -1074,6 +1074,8 @@ footer {
     text-align: center;
     padding: 6rem 3% 3rem;
     gap: 2rem;
+    padding-top: calc(8rem + 60px);
+    scroll-padding-top: 80px;
   }
 
   /* Secciones móvil */
